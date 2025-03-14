@@ -4,12 +4,10 @@ import "./App.css";
 function App() {
   const [input, setInput] = useState("");
 
-  // Función para manejar los clics en los botones
   const handleClick = (value) => {
     setInput(input + value);
   };
 
-  // Función para manejar la operación de igual
   const handleEqual = () => {
     try {
       setInput(eval(input).toString());
@@ -18,7 +16,6 @@ function App() {
     }
   };
 
-  // Función para borrar la entrada
   const handleClear = () => {
     setInput("");
   };
